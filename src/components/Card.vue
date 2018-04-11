@@ -30,10 +30,10 @@ export default {
 .Card {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 100px;
+    margin-bottom: 10vh;
     &__imageHolder {
         position: relative;
-        height: 500px;
+        height: 40vh;
         width: 100%;
         margin-right: auto;
         box-shadow: 0 5px 15px rgba(0,0,0,.2);
@@ -42,7 +42,8 @@ export default {
         width: 100%;
     }
     &__content {
-        width: calc(100% - 300px);
+        width: 900px;
+        max-width: calc(100% - 30px);
         background: #ffffff;
         padding: 50px;
         margin: 0 auto;

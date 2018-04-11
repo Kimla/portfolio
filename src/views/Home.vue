@@ -27,7 +27,7 @@ export default {
 
 <style lang="scss">
 .cards {
-    margin-top: 150px;
+    margin-top: 15vh;
     padding-bottom: 50px;
 }
 </style>
