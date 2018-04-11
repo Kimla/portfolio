@@ -20,6 +20,7 @@ h1,
     font-size: 74px;
     line-height: 1.08;
     margin-bottom: 32px;
+    font-weight: 300;
     @include breakpoint(laptop) {
         font-size: 58px;
     }
@@ -74,7 +75,7 @@ p {
 
 .preamble {
     font-size: 22px;
-    line-height: 1.4;
+    line-height: 1.5;
     @include breakpoint(small_tablet) {
         font-size: 18px;
     }
