@@ -5,6 +5,7 @@
     "@vue/airbnb"
   ],
   "rules": {
-   "indent": ["error", 4]
+   "indent": ["error", 4],
+   "linebreak-style": 0
   }
 }

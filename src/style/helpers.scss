@@ -1,0 +1,132 @@
+.box {
+    box-shadow: 0 0 73px 0 rgba(214, 220, 221, 0.79);
+    background-color: #ffffff;
+    padding: 75px 132px;
+    padding-bottom: 100px;
+    @include breakpoint(large_tablet) {
+        padding: 50px;
+    }
+    @include breakpoint(small_tablet) {
+        padding: 40px 30px;
+    }
+    @include breakpoint(mobile) {
+        padding: 30px 10px;
+    }
+    &__heading {
+        text-align: center;
+        color: $primaryColor;
+        margin-bottom: 42px;
+        @include breakpoint(small_tablet) {
+            margin-bottom: 30px;
+        }
+        @include breakpoint(mobile) {
+            margin-bottom: 22px;
+        }
+    }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity .35s;
+}
+.fade-enter,
+.fade-leave-to {
+    opacity: 0;
+}
+
+.overflowHidden {
+    overflow: hidden;
+}
+
+.roundedImage {
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+    border: 14px solid #ffffff;
+    @include breakpoint(tablet) {
+        border-width: 10px;
+    }
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.primaryColor {
+    color: $primaryColor;
+}
+
+.container,
+.halfContainer {
+    width: 1260px;
+    margin: 0 auto;
+    position: relative;
+    max-width: 100%;
+    padding: 0 30px;
+    @include breakpoint(mobile) {
+        padding: 0 15px;
+    }
+}
+
+.container--big {
+    width: 1524px;
+}
+
+.halfContainer {
+    width: 630px;
+}
+
+.ab100 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.alignright {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.alignleft {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.aligncenter {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.embedContainer {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    iframe,
+    object,
+    embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.objectFitCover {
+    object-fit: cover;
+    font-family: 'object-fit: cover;';
+}
+
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
