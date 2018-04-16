@@ -5,7 +5,7 @@
         <div class="Hero__wrapper">
             <div class="container">
                 <div class="Hero__inner">
-                    <h1>Lorem ipsum</h1>
+                    <h1>Kim Larsson</h1>
                     <p class="preamble">
                         Donec nec justo eget felis facilisis fermentum.
                         Aliquam porttitor mauris sit amet orci.
