@@ -41,7 +41,7 @@ export default {
         left: -10vw;
         top: -15vh;
         position: absolute;
-        background: linear-gradient(to right, #085078, #85d8ce);
+        background: linear-gradient(to right, #4b6cb7, #182848);
         height: 120%;
         transform: rotate(-5deg);
         &--lower {
