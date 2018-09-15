@@ -1,19 +1,12 @@
 <template>
-    <section class="Hero">
-        <div class="Hero__background"></div>
-        <div class="Hero__background Hero__background--lower"></div>
-        <div class="Hero__wrapper">
-            <div class="container">
-                <div class="Hero__inner">
-                    <h1>Lorem ipsum</h1>
-                    <p class="preamble">
-                        Donec nec justo eget felis facilisis fermentum.
-                        Aliquam porttitor mauris sit amet orci.
-                        Aenean dignissim pellentesque felis.
-                        Aliquam porttitor mauris sit amet orci.
-                        Aenean dignissim pellentesque felis.
-                    </p>
-                </div>
+    <section class="hero">
+        <div class="container">
+            <div class="inner">
+                <h1 class="heading">Kim Larsson</h1>
+                <p class="preamble">
+                    <span class="text">Web developer @</span>&nbsp;
+                    <a class="link" href="https://www.bravissimo.se/" target="_blank">Bravissimo</a>
+                </p>
             </div>
         </div>
     </section>
@@ -21,45 +14,55 @@
 
 <script>
 export default {
-
 };
 </script>
 
-<style lang="scss">
-.Hero {
-    min-height: 60vh;
-    position: relative;
+<style lang="scss" scoped>
+.hero {
+    width: 100vw;
+    height: 100vh;
+    background-color: #202020;
     display: flex;
-    &__wrapper {
-        width: 100%;
-        display: flex;
-        align-items: center;
-    }
-    &__background {
-        display: block;
-        width: 120vw;
-        left: -10vw;
-        top: -15vh;
+    align-items: center;
+    justify-content: center;
+}
+.inner {
+    text-align: center;
+    padding-bottom: 5vh;
+}
+.heading {
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+.preamble {
+    color: #ffffff;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text {
+    display: block;
+}
+.link {
+    font-weight: 600;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    padding: 3px 0;
+    &::after {
+        content: '';
         position: absolute;
-        background: linear-gradient(to right, #4b6cb7, #182848);
-        height: 120%;
-        transform: rotate(-5deg);
-        &--lower {
-            opacity: 0.2;
-            top: -12vh;
-            transform: rotate(-7deg);
-        }
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 3px;
+        transform: translateX(-100%);
+        background-color: #ffffff;
+        transition: 0.2s;
     }
-    &__inner {
-        padding: 120px 0;
-        text-align: center;
-        position: relative;
-        z-index: 1;
-        color: #ffffff;
-        width: 800px;
-        margin: 0 auto;
-        max-width: 100%;
-        margin-bottom: 3vh;
+    &:hover::after {
+        transform: translateX(0);
     }
 }
 </style>
