@@ -57,7 +57,7 @@ export default {
         bottom: 0;
         width: 100%;
         height: 3px;
-        transform: translateX(-100%);
+        transform: translateX(-105%);
         background-color: #ffffff;
         transition: 0.2s;
     }
