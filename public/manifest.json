@@ -1,6 +1,6 @@
 {
-  "name": "portfolio",
-  "short_name": "portfolio",
+  "name": "Kim Larsson",
+  "short_name": "Kim Larsson",
   "icons": [
     {
       "src": "/img/icons/android-chrome-192x192.png",
@@ -15,6 +15,6 @@
   ],
   "start_url": "/index.html",
   "display": "standalone",
-  "background_color": "#000000",
-  "theme_color": "#4DBA87"
+  "background_color": "#202020",
+  "theme_color": "#202020"
 }
