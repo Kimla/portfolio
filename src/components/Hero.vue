@@ -18,6 +18,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../style//global.scss';
+
 .hero {
     width: 100vw;
     height: 100vh;
@@ -40,6 +42,12 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
+    @include breakpoint(small_tablet) {
+        font-size: 22px;
+    }
+    @include breakpoint(mobile) {
+        font-size: 18px;
+    }
 }
 .text {
     display: block;
