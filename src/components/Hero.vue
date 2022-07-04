@@ -4,8 +4,7 @@
             <div class="inner">
                 <h1 class="heading">Kim Larsson</h1>
                 <p class="preamble">
-                    <span class="text">Web developer @</span>&nbsp;
-                    <a class="link" href="https://www.bravissimo.se/" target="_blank">Bravissimo</a>
+                    <span class="text">Full stack developer</span>
                 </p>
             </div>
         </div>
